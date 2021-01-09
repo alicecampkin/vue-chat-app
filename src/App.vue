@@ -1,14 +1,21 @@
 <template>
-  <Header />
+  <layout>
+    <conversation />
+    <add-message />
+  </layout>
 </template>
 
 <script>
-import Header from "./components/Header.vue";
+import Conversation from "./components/Conversation.vue";
+import AddMessage from "./components/AddMessage.vue";
+import Layout from "./components/Layout.vue";
 
 export default {
   name: "App",
   components: {
-    Header,
+    Conversation,
+    AddMessage,
+    Layout,
   },
 };
 </script>
@@ -18,6 +25,7 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
+  color: white;
+  background: #fafafa;
 }
 </style>
