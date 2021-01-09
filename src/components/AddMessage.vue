@@ -1,6 +1,6 @@
 <template>
   <form
-    class="container max-w-screen-md bg-gray-200 my-4 shadow-md flex h-20 rounded"
+    class="container max-w-screen-sm bg-gray-200 my-4 shadow-md flex h-20 rounded"
   >
     <input
       type="text-area"

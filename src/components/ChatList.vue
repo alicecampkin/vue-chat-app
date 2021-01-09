@@ -1,5 +1,5 @@
 <template>
-  <div class="w-80 py-8 shadow-lg bg-gray-800">
+  <div class="w-96 py-8 shadow-lg bg-gray-800">
     <h1 class="text-2xl my-4 px-6 font-extrabold">Chats</h1>
     <ul>
       <chat-card
