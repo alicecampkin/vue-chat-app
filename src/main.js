@@ -1,5 +1,21 @@
 import { createApp } from 'vue'
-import App from './App.vue'
-import './index.css'
+import { createStore } from 'vuex'
 
-createApp(App).mount('#app')
+// Create a new store instance.
+const store = createStore({
+  state () {
+    return {
+      count: 0
+    }
+  },
+  mutations: {
+    increment (state) {
+      state.count++
+    }
+  }
+})
+
+const app = createApp({ /* your root component */ })
+
+// Install the store instance as a plugin
+app.use(store)
